@@ -9,14 +9,16 @@ class Solution {
         int t = Convert.ToInt32(Console.ReadLine());
         for(int a0 = 0; a0 < t; a0++){
             long n = Convert.ToInt64(Console.ReadLine());
-            long a=1,b=2,c=3,sum=2;
-            while(c<=n)
+            long a=0,b=2;
+            long sum = a + b;
+            while(b<=n)
             {
-                if(c%2==0)
-                    sum+=c;
+                long c = (4 *b) + a;
+                if(c>=n)
+                    break;
                 a=b;
                 b=c;
-                c=a+b;
+                sum += c;
             }
         Console.WriteLine(sum);
         }
