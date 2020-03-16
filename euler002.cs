@@ -10,16 +10,16 @@ class Solution {
         for(int a0 = 0; a0 < t; a0++){
             long n = Convert.ToInt64(Console.ReadLine());
             long a=0,b=2;
+            long c = 4 * b + a;
             long sum = a + b;
-            while(b<=n)
-            {
-                long c = (4 *b) + a;
-                if(c>=n)
-                    break;
+            do
+            {                
+                sum += c;              
                 a=b;
                 b=c;
-                sum += c;
+                c = 4 * b + a;
             }
+            while(c<=n);
         Console.WriteLine(sum);
         }
     }
