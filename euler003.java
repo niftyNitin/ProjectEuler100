@@ -1,8 +1,7 @@
-import java.io.*;
+//Project Euler #3: Largest prime factor
+
 import java.util.*;
-import java.text.*;
 import java.math.*;
-import java.util.regex.*;
 
 public class Solution {
 
