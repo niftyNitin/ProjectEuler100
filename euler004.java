@@ -28,7 +28,11 @@ public class Solution {
                 // n-digit numbers 
                 int product = i * j; 
                 if (product < max_product) 
-                    break; 
+                    break;
+                
+                if (product % 11 != 0)
+                    continue;
+                
                 int number = product; 
                 int reverse = 0; 
       
