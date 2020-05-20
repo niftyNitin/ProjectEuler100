@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Euler001 {
 
-    public static void Main(String[] args) {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int t = scanner.nextInt();
         for(int a0 = 0; a0 < t; a0++){

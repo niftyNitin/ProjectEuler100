@@ -1,9 +1,5 @@
 //Project Euler #4: Largest palindrome product
-import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
 public class Euler004 {
 
@@ -14,6 +10,7 @@ public class Euler004 {
             int n = in.nextInt();
             System.out.println(largestPalindrome(n));
         }
+        in.close();
     }
 
     static int largestPalindrome(int n) {       

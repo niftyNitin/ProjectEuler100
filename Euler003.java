@@ -1,7 +1,6 @@
 //Project Euler #3: Largest prime factor
 
 import java.util.*;
-import java.math.*;
 
 public class Euler003 {
 
@@ -28,5 +27,6 @@ public class Euler003 {
 
             System.out.println(greatestPrime);
         }
+        in.close();
     }
 }

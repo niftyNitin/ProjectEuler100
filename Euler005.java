@@ -1,9 +1,5 @@
 //Project Euler #5: Smallest multiple
-import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
 public class Euler005 {
 
@@ -18,6 +14,7 @@ public class Euler005 {
             }
             System.out.println(product);
         }
+        in.close();
     }
 
     public static int hcf(int a, int b) {

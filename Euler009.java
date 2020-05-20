@@ -11,6 +11,7 @@ public class Euler009 {
             int n = in.nextInt();
             System.out.println(pythagoreanTriplet(n));
         }
+        in.close();
     }
 
     public static long pythagoreanTriplet(int n) {

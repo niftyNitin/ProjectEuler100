@@ -26,6 +26,7 @@ public class Euler007 {
         for (int i = 0; i < t; i++) {
             System.out.println(primeNumbers[store[i]]);
         }
+        in.close();
     }
 
     public static void findPrime(int[] primeChecker, int[] primeNumbers, int max) {

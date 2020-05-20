@@ -13,6 +13,7 @@ public class Euler008 {
             String num = in.next();
             System.out.println(largestProduct(n, k, num));
         }
+        in.close();
     }
 
     public static int largestProduct(int n, int k, String num) {

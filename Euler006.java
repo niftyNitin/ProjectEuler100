@@ -1,10 +1,6 @@
 //Project Euler #6: Sum square difference
 
-import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
 public class Euler006 {
 
@@ -15,6 +11,7 @@ public class Euler006 {
             long n = in.nextInt();
             System.out.println(absoluteDifference(n));
         }
+        in.close();
     }
 
     public static long absoluteDifference(long n) {

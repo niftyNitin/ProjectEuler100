@@ -1,14 +1,13 @@
 //Project Euler #2: Even Fibonacci numbers
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-class Solution {
+import java.util.Scanner;
 
-    static void Main(String[] args) {
-        int t = Convert.ToInt32(Console.ReadLine());
+public class Euler002 {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int t = in.nextInt();
         for(int a0 = 0; a0 < t; a0++){
-            long n = Convert.ToInt64(Console.ReadLine());
+            long n = in.nextLong();
             long a=0,b=2;
             long c = 4 * b + a;
             long sum = a + b;
@@ -20,7 +19,8 @@ class Solution {
                 c = 4 * b + a;
             }
             while(c<=n);
-        Console.WriteLine(sum);
+        System.out.println(sum);
         }
+        in.close();
     }
 }
