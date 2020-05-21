@@ -8,13 +8,17 @@ public class Euler013 {
         Scanner scanner = new Scanner(System.in);
         t = scanner.nextInt();
         List<String> numbers = new ArrayList<>();
-        for(int i = 0; i < t; i++){
-            numbers.add(scanner.nextLine());
+        for(int i = 0; i <= t; i++){
+            String str = scanner.nextLine();
+            numbers.add(str);
+        }
+
+        for (int i = 1; i <= t; i++) {
             String s = numbers.get(i);
-            sum += Integer.parseInt(s.substring(0,9));
+            sum += Long.parseLong(s.substring(0,11));
         }
         String sum10 = Long.toString(sum);
-        System.out.println(sum10.substring(0,9));
+        System.out.println(sum10.substring(0,10));
         scanner.close();
     }
 }
